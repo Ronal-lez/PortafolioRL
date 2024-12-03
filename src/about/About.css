@@ -1,0 +1,150 @@
+.about{
+    width: 90%;
+    margin: 0 auto;
+}
+.about_seccion{
+    margin-bottom: 4vh;
+}
+.about_info{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+    text-align: center;
+}
+
+.about_texto{
+    color: rgb(149, 149, 149);
+    width: 90%;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+.about_img_container{
+    max-height: 10rem;
+    width: auto;
+    background-color: #81f4bd;
+    display: flex; 
+    justify-content: center;
+}
+
+.about_img{
+    max-height: 10rem;
+    transform: translate(-1vh, -1vh);
+    transition: transform 0.2s;
+}
+.about_img:hover {
+    transform: translate(-2vh, -2vh); 
+}
+
+.resaltar{
+    color: #81f4bd;
+}
+
+.about_titulo_skills,
+.about_titulo_text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #dbdbdb;
+    border-bottom: solid #264938 1px;
+    text-align: center;
+}
+.about_icons{ 
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 3vh;
+    margin-top: 4vh;
+}
+.icons{
+    display: flex;    
+    align-items: center;
+    gap: 1vh;
+    color: rgb(237, 237, 237);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+}
+.icon-java, .icon-javascript,
+.icon-springboot,.icon-css,
+.icon-html,.icon-sqlserver,
+.icon-mysql,.icon-react,
+.icon-angular,.icon-git,
+.icon-postman,.icon-kotlin {
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    .about{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about_seccion{
+        width: 47%;
+    }
+    .about_info {
+        flex-direction: column;
+        margin-top: 5vh; 
+        text-align: left;
+    }
+    .about_titulo_skills,
+    .about_titulo_text{
+        font-size: 1.8rem;
+    }
+    .about_texto {
+        font-size: 1.1rem; 
+        width: 80%;
+    }
+    .about_img_container {
+        max-height: 15rem;
+        width: auto;
+        background-color: #81f4bd;
+        display: flex;
+        justify-content: center;
+        border: solid;
+    }
+    .about_img{
+        max-height: 15rem;
+        transform: translate(-1vh, -1vh);
+        transition: transform 0.2s;
+    }
+    .about_icons{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_img:hover{
+        transform: translate(-2vh, -2vh); 
+    }
+    .icons{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .about{
+        width: 75%;
+    }
+    .about_seccion{
+        width: 47%;
+    }
+    .about_info {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .about_texto {
+        width: 55%;
+    }
+    .about_titulo_skills,
+    .about_titulo_text{
+        font-size: 2.2rem;
+    }
+    .about_img_container {
+        max-height: 17rem;
+    }
+    .about_img{
+        max-height: 17rem;
+
+    }
+    .about_icons{ 
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

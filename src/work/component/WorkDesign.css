@@ -1,0 +1,81 @@
+.workdesign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+.workdesign_contenido{
+    width: 45%;
+    background-color: #192323;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.workdesign_contenedorimg{
+    display: none;
+    
+}
+.workdesign_contenido_titulo{
+    color: rgb(245, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.workdesign_contenido_texto{
+    color: #959595;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+.workdesign_icon{
+    display: flex;
+    margin: 0;
+    gap: 1rem;
+}
+.workdesign_icon_externallink svg,
+.workdesign_icon_github svg{
+    height: 2rem;
+    color: rgb(196, 196, 196);
+}
+
+.workdesign_icon_externallink svg:hover,
+.workdesign_icon_github svg:hover{
+    color: rgb(129, 244, 189);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .workdesign_contenido_titulo{
+        font-size: 1.2rem;
+    }
+    .workdesign_contenido{
+        width: 45%;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: 0 0 0 transparent;
+    }
+    .workdesign_contenedorimg{
+        width: 45%;
+        display: block;
+    }
+    .workdesign_contenido_img{
+        
+        max-height: 450px;
+        object-fit: contain;
+        width: 100%;
+    }
+    .workdesign_contenido_texto{
+        background-color: #192323;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 1200px) {
+    .workdesign{
+        gap: 3rem;
+    }
+    .workdesign_contenido_titulo{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+.app_portada{
+    display: flex;
+    min-height: 85vh;
+    
+}
+.app_hp{
+    min-height: 100vh;
+}
+
+.app_about{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    scroll-behavior: smooth; 
+}
+.app_work{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_contact{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}

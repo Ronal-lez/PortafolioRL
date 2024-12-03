@@ -1,0 +1,92 @@
+.cabecera{
+    max-height: 60px;
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.cabecera.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #131A1A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.cabecera.hidden {
+    transform: translateY(-100%); /* Desplazar hacia arriba para ocultar */
+    transition: transform 0.2s ease-in-out; /* Transición suave */
+}
+
+.cabecera.visible {
+    transform: translateY(0); /* Volver a la posición original */
+    transition: transform 0.2s ease-in-out; /* Transición suave */
+}
+.cabecera_logo{
+    max-height: 20px;
+}
+
+.cabecera nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.cabecera_enlaces{
+    display: flex;
+    gap: 2rem;
+}
+.cabecera_enlaces a{
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.cabecera_enlaces a:hover{
+    color: rgb(129, 244, 189);
+}
+
+.menu_hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.spacer {
+    height: 60px; /* Debe ser igual a la altura del header */
+    display: none;
+  }
+  
+  .spacer.active {
+    display: block;
+  }
+  
+@media (max-width: 768px) {
+    
+    
+    .cabecera_enlaces {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 30%;
+        padding: 1rem;
+    }
+
+    .cabecera_enlaces.open {
+        display: flex;
+    }
+
+    .menu_hamburguesa {
+        display: block;
+    }
+}
+

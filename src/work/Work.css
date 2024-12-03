@@ -1,0 +1,43 @@
+.work{
+    width: 90%;
+    margin-top: 50px;
+}
+.work-titulo{
+    color: #dbdbdb;
+    border-bottom: solid #264938 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.work_proyecto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+    .work-titulo{
+        font-size: 2rem;
+    }
+    .work{
+        width: 90%;
+        
+    }
+}
+@media (min-width: 1200px) {
+    .work{
+        width: 70%;
+        
+    }
+    .work-titulo{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-height: 590px){
+    .work{
+        margin-bottom: 100px;
+    }
+}
