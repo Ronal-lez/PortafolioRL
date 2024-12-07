@@ -1,7 +1,7 @@
 import './Work.css'
 import {WorkDesign} from './component/WorkDesign.jsx'
-import img1 from '../assets/inicioApp.jpg'
 export function Work(){
+    let img1='https://i.postimg.cc/GtQ0bM1r/Inicio-App.jpg'
     return(
         <main className="work">
             <p className="work-titulo">Proyectos</p>
