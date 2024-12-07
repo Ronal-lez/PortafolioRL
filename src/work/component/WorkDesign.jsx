@@ -4,7 +4,7 @@ import externallink from '../../assets/icon-external-link.svg'
 import github from '../../assets/icon-github.svg'
 import './WorkDesign.css'
 
-export function WorkDesign({titulo, texto,img}){
+export function WorkDesign({titulo, texto,img, link}){
 
     return(
         <div className="workdesign">
@@ -13,7 +13,10 @@ export function WorkDesign({titulo, texto,img}){
                 <p className='workdesign_contenido_texto'>{texto}</p>
                 <figure className='workdesign_icon'>
                     <ReactSVG className='workdesign_icon_externallink' src={externallink}/>
-                    <ReactSVG className='workdesign_icon_github' src={github}/>
+                    <a href={link} target='_blank' rel='noopener noreferrer'>
+                        <ReactSVG className='workdesign_icon_github' src={github}/>
+                    </a>
+                    
                 </figure>
                 
             </div>
@@ -27,5 +30,6 @@ export function WorkDesign({titulo, texto,img}){
 WorkDesign.propTypes = {
     titulo: PropTypes.string.isRequired,
     texto: PropTypes.string.isRequired, 
-    img: PropTypes.img, 
+    img: PropTypes.string, 
+    link: PropTypes.string.isRequired
 };

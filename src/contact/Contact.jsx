@@ -31,13 +31,13 @@ export function Contact(){
         </section>
 
         <footer className='pie'>
-            <p>
+            <a href='https://github.com/Ronal-lez/PortafolioRL' target='_blank' rel='noopener noreferrer'>
                 <ReactSVG src={github} />
-                Página onstruida por Ronaldo Lezama
+                Página construida por Ronaldo Lezama
                 <br></br>
                 ©2024 Portafolio
                 
-            </p>
+            </a>
         </footer>
         </div>
         

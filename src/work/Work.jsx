@@ -11,7 +11,7 @@ export function Work(){
                 Permite a los usuarios buscar productos, agregarlos al carrito y seleccionar entre recoger en tienda 
                 o pagar contra entrega. Los administradores pueden gestionar productos a través de su cuenta. 
                 Utiliza Firebase para autenticación y base de datos, y Kotlin para el desarrollo.'
-                img={img1}/>
+                img={img1} link='https://github.com/YhonelEspinola/appmobile'/>
             </article>
         </main>
     )

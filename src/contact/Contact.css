@@ -12,13 +12,16 @@
     display: flex;
     align-items: end;
     text-align: center;
-    color: #959595;
     font-family: monospace;
     font-size: 15px;
     height: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-.pie:hover{
+.pie a{
+    text-decoration: none;
+    color: #959595;
+}
+.pie a:hover{
     color: #81f4bd;
     cursor: pointer;
 }
