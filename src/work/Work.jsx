@@ -1,6 +1,6 @@
 import './Work.css'
 import {WorkDesign} from './component/WorkDesign.jsx'
-import img1 from '../assets/inicio-App.jpg'
+import img1 from '../assets/inicioApp.jpg'
 export function Work(){
     return(
         <main className="work">
