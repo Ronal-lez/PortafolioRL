@@ -1,4 +1,4 @@
-import './work.css'
+import './Work.css'
 import {WorkDesign} from './component/WorkDesign.jsx'
 import img1 from '../assets/inicio-App.jpg'
 export function Work(){
